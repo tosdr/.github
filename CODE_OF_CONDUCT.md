@@ -1,6 +1,8 @@
 # Contributor Covenant Code of Conduct
 
-[![](https://raw.githubusercontent.com/tosdr/CrispCMS/master/themes/crisp/img/tosdr-logo-128-w.png)](https://tosdr.org/)
+<p align="center">
+	<img src="https://tosdr-branding.s3.eu-west-2.jbcdn.net/tosdr-logo-128.svg">
+</p>
 
 In the ToS;DR Project, to ensure the safety of our users, aswell as to guarantee
 the quality of our software, we have to commit ourselvs to certain standards,
