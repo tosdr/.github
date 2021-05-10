@@ -17,6 +17,19 @@ Please note we have a code of conduct, please follow it in all your interactions
    do not have permission to do that, you may request the second reviewer to merge it for you. 
    A passing CI test is required aswell.
    
+  
+## Additional Repository Notes
+
+### [tosdr/CrispCMS](https://github.com/tosdr/CrispCMS)
+
+Changes to the API must be incremented with the [API_VERSION](https://github.com/tosdr/CrispCMS/blob/31c33a8825efa654d316e550f712ac7e0d6f33df/pixelcatproductions/crisp.php#L32) constant. We use semantic versioning, with each PUSH you **must** increment the version number depending on the changes you made.
+
+Patch / Bug Fix (**Patch Change**) = Increment last segment by one e.g. **1.0.0** -> **1.0.1**
+
+New Feature (**Minor Change**) = Increment middle segment by one e.g. **1.0.0** -> **1.1.0** OR **1.4.23** -> **1.5.0**
+
+Backwards incompatible Changes (**Major Change**) = Increment first segment by one  e.g. **1.0.0** -> **2.0.0** OR **1.2.12** -> **2.0.0**
+   
    
 ## Deployment Process
 
