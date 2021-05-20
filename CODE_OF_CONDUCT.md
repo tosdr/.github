@@ -40,6 +40,40 @@ include:
 * Focusing on what is best for the community
 * Showing empathy towards other community members
 
+
+### Code Standards
+
+#### CrispCMS
+
+We follow strict coding standards since migrating to PHP8.0 and your code must comply with the following conduct (The list is long):
+
+- Code follow to the PSR-12 standard
+- 'switch' expression must replaced with 'match' expression where applicable. [See Example](https://github.com/tosdr/CrispCMS/commit/3043fe78f2942f2bef370a7cbeeb465a54317c52#diff-3f4b79736bb8f16f9cbc502158eb95187e294b7487cf97e237ec89474e5f03d9)
+- No php short tags
+- Do NOT mix HTML with PHP, make use of the templating system
+- The templating system exposes all config values, do not override the `config` variable.
+- Make use of templates in translations. `{{ config.* }}` is exposed globally.
+- Always use translations, never use untranslated strings.
+- Multiple `if`s followed by a `throw` may be written without brackets, in other cases **ALWAYS** use brackets.
+- Do not use `str_pos` for string searching, use `str_contains` instead.
+- Each class must have a seperate file.
+- **Always** use camelCase syntax.
+- Make use of the `use` statement as much as possible, avoid using fully qualified names.
+- ternary expressions **are** allowed
+- Optional arguments **must always** be at the end of a function signature.
+- Reference static methods with `self` in the own class, no need to reference the class name
+- Avoid unnecessary type casts.
+- **NEVER** use a PHP closing tag.
+- Construct new array with the `[]` syntax rather than `array()`
+- Do not override the `$_GET["route"]` or `$GLOBALS["route"]` variables.
+- Always ensure non-GET and non-HEAD requests are CSRF secured!
+- Database modifications **MUST** be edited by a migration file!
+- Make use of `includeResource` and `generateLink` in templates as much as possible.
+- Do **NOT** modify API files without further approval by ToS;DR Staff
+- Do **NOT** modify CI files without further approval by ToS;DR Staff
+- Write test files.
+- 
+
 Examples of unacceptable behavior by participants include:
 
 * The use of sexualized language or imagery and unwelcome sexual attention or
