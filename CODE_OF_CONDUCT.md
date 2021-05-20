@@ -72,7 +72,7 @@ We follow strict coding standards since migrating to PHP8.0 and your code must c
 - Do **NOT** modify API files without further approval by ToS;DR Staff
 - Do **NOT** modify CI files without further approval by ToS;DR Staff
 - Write test files.
-- 
+- Avoid double qoutes where applicable.
 
 Examples of unacceptable behavior by participants include:
 
