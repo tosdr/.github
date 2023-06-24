@@ -1,4 +1,4 @@
-# ToS;DR Security Policy
+# ToS;DR Security Policy [HEREBY](@StuartSwitzman)
 
 If you think you've identified a security issue in any ToS;DR Project, please
 **do not** report the issue publicly via a mailing list, IRC, a public issue on
